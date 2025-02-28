@@ -10,7 +10,9 @@ const Header = () => {
       <ul className="flex gap-4">
         <li>
           <NavLink
-            className={({ isActive }) => isActive && "underline text-cyan-700"}
+            className={({ isActive }) =>
+              isActive ? "underline text-cyan-700" : ""
+            }
             to="/"
           >
             Home
@@ -18,7 +20,9 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && "underline text-cyan-700"}
+            className={({ isActive }) =>
+              isActive ? "underline text-cyan-700" : ""
+            }
             to="/about"
           >
             About
@@ -26,7 +30,9 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && "underline text-cyan-700"}
+            className={({ isActive }) =>
+              isActive ? "underline text-cyan-700" : ""
+            }
             to="/contact"
           >
             Contact
